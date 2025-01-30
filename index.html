@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas - Logística</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Juego de Preguntas - Logística</h1>
+        <p>Ingresa tu nombre:</p>
+        <input type="text" id="playerName" placeholder="Tu nombre">
+        <button onclick="startGame()">Iniciar</button>
+        <div id="game" style="display: none;">
+            <p class="progress">Pregunta <span id="currentQuestion">1</span> de 15</p>
+            <p class="question" id="questionText"></p>
+            <div class="options" id="options"></div>
+            <p class="feedback" id="feedback"></p>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>¡Juego Terminado!</h2>
+            <p id="finalScore"></p>
+            <p id="finalTime"></p>
+            <p id="farewell"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
